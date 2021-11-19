@@ -2,18 +2,26 @@
 
 ## Modo de uso de la API
 
-Solo hay 4 posibilidades
-
 ```
-GET /users/
+GET /users
 Trae todos los usuarios
 
-POST /users/:usuario
-Agrega a un nuevo usuario
+GET /users/email/:email
+Trae un usuario según su email
 
-PUT /users/:usuario/:nuevovalor
-Actualiza a un usuario
+GET /users/name/:name
+Trae un usuario según su nombre
 
-DELETE /users/:usuario
-Elimina al usuario
+POST /users
+Agrega a un nuevo usuario mediante un formulario
+
+PUT /users
+Actualiza a un usuario mediante un formulario
+
+DELETE /users/delete/:email
+Elimina al usuario por su email
+
+DELETE /users/deletes
+Elimina varios usuarios por su email mediante queries
+Ej: /users/deletes?email=homero@mail.com,bart@mail.com
 ```

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>API</title>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="fondo-imagen">
+			<div class="presentacion">
+				<h1>API</h1>
+			</div>
+			<div class="explicacion">
+				<h2>Agregar a un usuario</h2>
+				<a href="/" class="btn">Volver</a>
+				<div class="posibilidad">
+					<p>name</p>
+					<p>Nombre del usuario</p>
+				</div>
+				<div class="posibilidad">
+					<p>email</p>
+					<p>Email del usuario. No agrega el usuario si ya existe un email registrado</p>
+				</div>
+				<div class="posibilidad">
+					<p>password</p>
+					<p>Cualquier contraseña</p>
+				</div>
+        <form action="/users" method="POST" enctype="application/x-www-form-urlencoded">
+          <input type="text" class="input" placeholder="Nombre" name="name" required>
+          <br>
+          <input type="email" class="input" placeholder="Email" name="email" required>
+          <br>
+          <input type="password" class="input" placeholder="Contraseña" name="password" required>
+          <br>
+          <button type="submit" class="btn">Enviar datos</button>
+        </form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

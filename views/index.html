@@ -14,23 +14,32 @@
 			</div>
 			<div class="explicacion">
 				<h3>Modo de uso de la API</h3>
-				<h4>Solo hay 4 posibilidades</h4>
+				<h4>Posibilidades</h4>
 				<div class="posibilidad">
-					<p>GET /users/</p>
+					<p>GET /users</p>
 					<p>Trae todos los usuarios</p>
 				</div>
 				<div class="posibilidad">
-					<p>POST /users/:usuario</p>
-					<p>Agrega a un nuevo usuario</p>
+					<p>GET /users/email/:email</p>
+					<p>Trae un usuario según su email</p>
 				</div>
 				<div class="posibilidad">
-					<p>PUT /users/:usuario/:nuevovalor</p>
-					<p>Actualiza a un usuario</p>
+					<p>GET /users/name/:name</p>
+					<p>Trae un usuario según su nombre</p>
 				</div>
 				<div class="posibilidad">
-					<p>DELETE /users/:usuario</p>
-					<p>Elimina al usuario</p>
+					<p>POST /users</p>
+					<p>Agrega a un nuevo usuario mediante un formulario</p>
 				</div>
+				<div class="posibilidad">
+					<p>PUT /users</p>
+					<p>Actualiza a un usuario mediante un formulario</p>
+				</div>
+				<div class="posibilidad">
+					<p>DELETE /users/:email</p>
+					<p>Elimina al usuario por su email</p>
+				</div>
+				<a href="add" class="btn">Ir al formulario</a>
 			</div>
 		</div>
 	</div>

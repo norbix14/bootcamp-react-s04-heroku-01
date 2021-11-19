@@ -14,6 +14,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	height: 100vh;
+}
+
 p {
 	padding: 2px;
 	margin: 4px auto;
@@ -22,7 +26,6 @@ p {
 .contenedor {
 	background-color: lightblue;
 	position: relative;
-	height: 100vh;
 }
 
 .fondo-imagen {
@@ -59,6 +62,42 @@ p {
 	background-color: rgba(0,0,0,0.5);
 	border-radius: 10px;
 	margin: 5px auto;
+}
+
+.btn {
+	padding: 10px;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	background-color: rgba(13,13,200,0.8);
+	transition: all .2s ease-in-out;
+	font-size: 1.25rem;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: rgba(13,13,200,1);
+	box-shadow: 0 2px 4px #fff;
+}
+
+.input {
+	margin: 0 auto;
+	width: 60%;
+	padding: 10px;
+	border: none;
+	border-radius: 8px;
+	margin: 10px auto;
+	border: 2px solid transparent;
+}
+
+.input:focus {
+	outline: none;
+	border: 2px solid rgba(13,13,200,0.8);
+}
+
+.input::placeholder {
+	opacity: 1;
+	color: rgba(0,0,0,0.9);
 }
 
 @media only screen and (min-width: 992px) {}
