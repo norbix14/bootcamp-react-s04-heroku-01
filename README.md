@@ -1,5 +1,23 @@
 # Ejercicio API con deploy en Heroku
 
+## Usar Dockerfile
+
+### [NodeJS and Docker](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/ "Dockerizing a NodeJS web app")
+
+```
+// crear la imagen desde Dockerfile
+docker build -t <image-name> .
+
+// correr contenedor de fondo con puerto 3000 expuesto
+docker run -dp 3000:3000 <image-name>
+
+// detener contenedor
+docker stop <containerid>
+
+// eliminar imagen
+docker rmi -f <image-name>
+```
+
 ## Modo de uso de la API
 
 ```
